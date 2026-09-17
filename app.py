@@ -703,7 +703,6 @@ I would **not** add random package versions just to make the file look complete.
 **Chunking:** Python  
 **Embeddings:** `sentence-transformers`  
 **Vector DB:** `faiss-cpu`  
-**LLM:** Groq → `openai/gpt-oss-120b`  
 **Frontend:** Streamlit
 
 Your Groq key should go in **Streamlit Cloud → App Settings → Secrets**, not in GitHub.
@@ -714,6 +713,3 @@ For local testing, you can use:
 GROQ_API_KEY = "your_groq_api_key"
 ````
 
-The application will then follow the complete RAG pipeline:
-
-**PDF → extraction → chunks → embeddings → FAISS → similarity search → relevant context → GPT-OSS 120B → answer.**
